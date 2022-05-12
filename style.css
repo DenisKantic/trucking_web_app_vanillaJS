@@ -6,6 +6,7 @@
 
 body {
   height: 100vh;
+  background-color: #ffffff;
 }
 
 .icon,
@@ -20,19 +21,45 @@ body {
   justify-content: space-between;
   align-items: center;
   height: 6vh;
-  background-color: purple;
+  background-color: #073a7e;
   overflow: hidden;
 }
 
+.active-load {
+  color: #ffffff;
+  font-size: 16px;
+}
+
 .profile-section {
-  display: inline-block;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fa-truck-fast {
+  font-size: 30px;
+  color: white;
+  padding: 20px;
+}
+
+.fa-user {
+  font-size: 25px;
+  color: white;
+  padding: 20px;
+  text-align: right;
+  float: right;
+}
+
+.user-name {
+  font-size: 15px;
+  color: white;
+  text-transform: uppercase;
 }
 
 /* ____________________________MAIN PART____________________________*/
 
 .main-part {
   height: 94vh;
-  background-color: lightblue;
 }
 
 .origin-state,
@@ -41,8 +68,15 @@ body {
   height: 40px;
 }
 
+.origin-state {
+  width: 120px;
+  padding: 10px;
+  text-align: left;
+}
+
 .select-state {
   width: 200px;
+  padding: 10px;
 }
 
 .select-state,
@@ -50,7 +84,16 @@ body {
   background: none;
   outline: none;
   border-radius: 5px;
-  border: 1px solid blue;
+  border: 1px solid #798ba1;
+  outline: 0;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+select option {
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #ffffff;
 }
 
 .search-btn {
@@ -60,11 +103,13 @@ body {
   background: none;
   outline: none;
   border-radius: 5px;
-  border: 1px solid blue;
+  border: 1px solid #073a7e;
+  cursor: pointer;
+  color: #073a7e;
 }
 
 .left-search-area {
-  padding: 20px 0 40px 40px;
+  padding: 20px 0 40px 20px;
 }
 
 .select-state,
@@ -73,28 +118,46 @@ body {
 }
 
 .free-paid-profile-option {
-  height: 50px;
+  height: 45px;
   width: 100%;
-  border-top: 1px solid black;
+  border-top: 1px solid #dadada;
   display: inline-flex;
-  border-bottom: 1px solid black;
 }
 
-.fa-user {
-  margin-right: 15px;
+.fa-lock,
+.fa-check {
+  font-size: 15px;
+  margin-left: 10px;
+}
+
+.fa-lock {
+  margin-right: 10px;
 }
 
 .free-loads-btn,
 .expedite-pro-btn {
-  height: 50px;
+  height: 45px;
   background: none;
   border: none;
   color: black;
   width: auto;
   padding: 10px;
   outline: none;
+  cursor: pointer;
+}
+
+.free-loads-btn {
+  color: #798ba1;
 }
 
 .expedite-pro-btn {
-  background-color: rebeccapurple;
+  background-color: #073a7e;
+  color: white;
 }
+
+.num-jobs {
+  display: inline-flex;
+  margin-left: 10px;
+}
+
+/*_______________________DATA TABLE LEFT_______________________*/
