@@ -4,8 +4,53 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <script src="script.js" defer></script>
     <title>Freight app</title>
   </head>
-  <body></body>
+  <body>
+    <header class="header-part">
+      <img src="icon.jpg" alt="" class="icon" />
+      <h3 class="active-load">Active loads: 13576</h3>
+      <div class="profile-section">
+        <!-- <p class="user-name">DEMO USER</p> need to figure how to sort this out -->
+        <img src="icon.jpg" alt="" class="user-icon" />
+      </div>
+    </header>
+
+    <div class="main-part">
+      <div class="left-search-area">
+        <select name="or_states" class="origin-state">
+          <option value="texas" selected disabled hidden>Origin state</option>
+          <option value="colorado">Colorado</option>
+          <option value="newyork">New York</option>
+          <option value="seattle">Seattle</option>
+        </select>
+
+        <select name="states" class="select-state">
+          <option value="texas" selected disabled hidden>State</option>
+          <option value="colorado">Colorado</option>
+          <option value="newyork">New York</option>
+          <option value="seattle">Seattle</option>
+        </select>
+
+        <button class="search-btn">Search</button>
+      </div>
+
+      <div class="free-paid-profile-option">
+        <button class="free-loads-btn">
+          <i class="fa fa-user"></i> FREE LOADS 4346
+        </button>
+        <button class="expedite-pro-btn">
+          <i class="fa fa-user"></i>EXPEDITE PRO 9130
+        </button>
+      </div>
+    </div>
+  </body>
 </html>
