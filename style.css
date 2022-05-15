@@ -58,10 +58,6 @@ body {
 
 /* ____________________________MAIN PART____________________________*/
 
-.main-part {
-  height: 94vh;
-}
-
 .origin-state,
 .select-state,
 .search-btn {
@@ -108,6 +104,12 @@ select option {
   color: #073a7e;
 }
 
+.search-btn:hover {
+  transition: 0.3s ease;
+  background-color: #073a7e;
+  color: white;
+}
+
 .left-search-area {
   padding: 20px 0 40px 20px;
 }
@@ -122,6 +124,7 @@ select option {
   width: 100%;
   border-top: 1px solid #dadada;
   display: inline-flex;
+  border-bottom: 1px solid #dadada;
 }
 
 .fa-lock,
@@ -155,9 +158,80 @@ select option {
   color: white;
 }
 
+.free-loads-btn:hover {
+  transition: 0.3s ease;
+  color: black;
+  background-color: #c4c4c4;
+}
+
+.expedite-pro-btn:hover {
+  background-color: #055bca;
+  transition: 0.3s ease;
+}
+
 .num-jobs {
   display: inline-flex;
   margin-left: 10px;
 }
 
 /*_______________________DATA TABLE LEFT_______________________*/
+.left-side-table-data {
+  height: 100vh;
+  width: 70%;
+  position: fixed;
+  left: 0;
+}
+
+.table-data {
+  width: 100%;
+  text-align: start;
+  overflow: hidden;
+}
+
+th {
+  height: 40px;
+  text-align: start;
+  border-bottom: 1px solid #dadada;
+}
+
+th,
+td {
+  padding: 0 20px;
+}
+
+.age {
+  width: 5%;
+}
+.pickdate {
+  width: 10%;
+}
+
+.origin {
+  width: 15%;
+}
+
+.destination {
+  width: 15%;
+}
+
+.broker {
+  width: 35%;
+}
+
+.cs,
+.dtp {
+  width: 5%;
+}
+
+.vehicleType {
+  width: 10%;
+}
+/*_______________________RIGHT SIDE CARD_______________________*/
+
+.right-side-card {
+  height: 100%;
+  width: 30%;
+  position: fixed;
+  background-color: royalblue;
+  right: 0;
+}
