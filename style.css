@@ -226,12 +226,149 @@ td {
 .vehicleType {
   width: 10%;
 }
+
+.inserted-data-table {
+  height: 50px;
+}
+
+.inserted-data-table td {
+  border-bottom: 1px solid #dadada;
+}
+
+.inserted-data-table:hover {
+  background-color: #628bc9;
+  transition: 0.2s ease;
+  cursor: pointer;
+  color: #fafafa;
+}
+
 /*_______________________RIGHT SIDE CARD_______________________*/
 
 .right-side-card {
   height: 100%;
   width: 30%;
   position: fixed;
-  background-color: royalblue;
+  background-color: #fafafa;
   right: 0;
+  border-left: 1px solid #dadada;
+}
+
+.top-menu {
+  height: 60px;
+  background-color: #628bc9;
+  display: inline-flex;
+  width: 100%;
+  align-items: center;
+}
+
+.offer-btn,
+.call-btn {
+  height: 40px;
+  padding: 10px;
+  margin-left: 20px;
+  font-size: 14px;
+  text-transform: uppercase;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+}
+
+.offer-btn:hover,
+.call-btn:hover {
+  background-color: #a4c6f3;
+  color: black;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.offer-btn {
+  width: 150px;
+  color: #073a7e;
+}
+
+.fa-phone {
+  width: 30px;
+}
+
+.fa-envelope,
+.fa-phone {
+  margin-right: 10px;
+  font-size: 16px;
+  color: #055bca;
+}
+
+/* destination part */
+
+.destination-part {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0;
+  width: 95%;
+  margin: auto;
+  border-bottom: dashed #628bc9 1px;
+}
+
+.fa-truck-moving {
+  width: 200px;
+  text-align: center;
+  font-size: 40px;
+  margin-top: -50px;
+}
+
+.cargo-details,
+.place,
+.date {
+  text-align: left;
+  font-size: 12px;
+  width: 120px;
+  overflow: hidden;
+}
+
+.place,
+.date {
+  margin-top: 10px;
+}
+
+.cargo-details {
+  margin: auto;
+  text-align: center;
+  width: 150px;
+}
+
+.fa-a,
+.fa-b {
+  font-size: 60px;
+  position: relative;
+}
+
+.fa-b {
+  text-align: center;
+}
+
+.fa-arrow-right {
+  font-size: 30px;
+  margin-top: -40px;
+}
+
+.information-part {
+  margin-top: 20px;
+}
+
+/* second part ( table information ) */
+
+.data-table-spec {
+  width: 95%;
+  border-bottom: dashed 1px #628bc9;
+  padding: 20px 0;
+  margin: auto;
+  align-items: center;
+}
+
+.th-details {
+  height: 40px;
+}
+
+.td-details {
+  height: 30px;
 }
