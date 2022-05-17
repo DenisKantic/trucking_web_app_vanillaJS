@@ -343,7 +343,15 @@ td {
 }
 
 .fa-b {
-  text-align: center;
+  text-align: right;
+}
+
+#dateB {
+  text-align: right;
+}
+
+#placeB {
+  text-align: right;
 }
 
 .fa-arrow-right {
