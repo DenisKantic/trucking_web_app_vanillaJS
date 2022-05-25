@@ -1,7 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,200&family=Roboto:wght@100;400&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 body {
@@ -187,6 +191,7 @@ select option {
   width: 100px;
   font-size: 25px;
   text-align: center;
+  color: #073a7e;
 }
 
 .table-data {
@@ -195,9 +200,10 @@ select option {
 }
 
 th {
-  height: 40px;
+  height: 60px;
   text-align: start;
   border-bottom: 1px solid #dadada;
+  font-weight: 400;
 }
 
 th,
@@ -315,11 +321,12 @@ td {
   border-bottom: dashed #628bc9 1px;
 }
 
-.destination-part .fa-truck {
+.destination-part .fa-truck-moving {
   width: 200px;
   text-align: center;
-  font-size: 40px;
+  font-size: 50px;
   margin-top: -50px;
+  color: #073a7e;
 }
 
 .cargo-details,
@@ -340,12 +347,16 @@ td {
   margin: auto;
   text-align: center;
   width: 150px;
+  margin-top: 10px;
+  font-size: 15px;
+  color: #073a7e;
 }
 
 .fa-a,
 .fa-b {
   font-size: 60px;
   position: relative;
+  color: #073a7e;
 }
 
 .fa-b {
@@ -354,6 +365,21 @@ td {
 
 #dateB {
   text-align: right;
+  font-weight: 400;
+}
+
+.date {
+  font-weight: 400;
+  font-style: italic;
+}
+
+.place,
+.date {
+  color: black;
+}
+
+.place {
+  font-size: 15px;
 }
 
 #placeB {
@@ -363,6 +389,7 @@ td {
 .fa-arrow-right {
   font-size: 30px;
   margin-top: -40px;
+  color: #073a7e;
 }
 
 .information-part {
@@ -398,14 +425,21 @@ td {
 .comp-name {
   margin-top: 20px;
   font-size: 20px;
+  font-weight: 400;
 }
+
 .review {
+  width: 250px;
   display: inline-flex;
-  margin-top: 15px;
+}
+
+.review .fa-star {
+  margin-right: 5px;
 }
 
 .review-text {
   margin-left: 10px;
+  color: #073a7e;
 }
 
 .left-side-info {
@@ -442,7 +476,7 @@ td {
 
 .right-side-info .fa-star,
 .fa-ban {
-  margin-right: 20px;
+  margin-right: 10px;
 }
 
 .fa-circle-question {
@@ -460,9 +494,18 @@ td {
   margin-top: 20px;
 }
 
+.right-text {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+.mail {
+  color: #073a7e;
+}
+
 .note {
   margin-top: 20px;
-  font-size: 20px;
 }
 
 /* MEDIA QUERIES */
