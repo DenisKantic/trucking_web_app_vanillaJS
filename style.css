@@ -572,7 +572,7 @@ td {
   .left-side-table-data {
     position: fixed;
     overflow: scroll;
-    width: 65%;
+    width: 65%g;
   }
 
   .table-data {
