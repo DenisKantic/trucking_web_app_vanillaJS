@@ -492,6 +492,7 @@ td {
 
 .mess_notes {
   margin-top: 20px;
+  font-size: 22px;
 }
 
 .right-text {
@@ -506,6 +507,22 @@ td {
 
 .note {
   margin-top: 20px;
+}
+
+.left-note {
+  position: fixed;
+  width: 60px;
+}
+
+.right-note {
+  position: fixed;
+  right: 0;
+  margin-top: 20px;
+  width: 450px;
+}
+
+.order-num {
+  margin-top: 10px;
 }
 
 /* MEDIA QUERIES */
@@ -536,5 +553,29 @@ td {
 
   #truck-right {
     font-size: 40px;
+  }
+
+  .right-note {
+    width: 350px;
+  }
+}
+
+@media (min-width: 1501px) and (max-width: 1800px) {
+  .right-note {
+    width: 350px;
+  }
+
+  .right-side-card {
+    width: 35%;
+  }
+
+  .left-side-table-data {
+    position: fixed;
+    overflow: scroll;
+    width: 65%;
+  }
+
+  .table-data {
+    overflow: scroll;
   }
 }
