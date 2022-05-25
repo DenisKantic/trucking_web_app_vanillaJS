@@ -7,7 +7,7 @@
     "Broker": "1A INTERMODAL",
     "CS": "-",
     "DTP": "-",
-    "VehicleType": "icon"
+    "VehicleType": "<i id=\"vehicle_icon\" class=\"fa-solid fa-truck\"></i>"
   },
 
   {
@@ -18,7 +18,7 @@
     "Broker": "CITADEL CARTAGE LLC",
     "CS": "-",
     "DTP": "-",
-    "VehicleType": "icon"
+    "VehicleType": "<i id=\"vehicle_icon\" class=\"fa-solid fa-truck\"></i>"
   },
   {
     "Age": "1",
@@ -28,7 +28,7 @@
     "Broker": "SAME DAY DELIVERY",
     "CS": "-",
     "DTP": "-",
-    "VehicleType": "icon"
+    "VehicleType": "<i id=\"vehicle_icon\" class=\"fa-solid fa-truck\"></i>"
   },
   {
     "Age": "1",
@@ -38,7 +38,7 @@
     "Broker": "TAT LOGISTICS",
     "CS": "-",
     "DTP": "-",
-    "VehicleType": "icon"
+    "VehicleType": "<i id=\"vehicle_icon\" class=\"fa-solid fa-truck-moving\"></i>"
   },
   {
     "Age": "1",
@@ -48,7 +48,7 @@
     "Broker": "V3 TRANSPORTATION GBO OPS",
     "CS": "-",
     "DTP": "-",
-    "VehicleType": "icon"
+    "VehicleType": "<i id=\"vehicle_icon\" class=\"fa-solid fa-truck-moving\"></i>"
   },
   {
     "Age": "1",
@@ -58,7 +58,7 @@
     "Broker": "TALATRANS WORLDWIDE",
     "CS": "-",
     "DTP": "-",
-    "VehicleType": "icon"
+    "VehicleType": "<i id=\"vehicle_icon\" class=\"fa-solid fa-truck-moving\"></i>"
   },
   {
     "Age": "1",
@@ -68,7 +68,7 @@
     "Broker": "ORD EXPEDITE",
     "CS": "-",
     "DTP": "-",
-    "VehicleType": "icon"
+    "VehicleType": "<i id=\"vehicle_icon\" class=\"fa-solid fa-truck\"></i>"
   },
   {
     "Age": "1",
@@ -78,7 +78,7 @@
     "Broker": "FASTMORE LOGISTICS",
     "CS": "-",
     "DTP": "-",
-    "VehicleType": "icon"
+    "VehicleType": "<i id=\"vehicle_icon\" class=\"fa-solid fa-truck\"></i>"
   },
   {
     "Age": "1",
@@ -88,7 +88,7 @@
     "Broker": "CIRCLE LOGISTICS",
     "CS": "-",
     "DTP": "-",
-    "VehicleType": "icon"
+    "VehicleType": "<i id=\"vehicle_icon\" class=\"fa-solid fa-truck-moving\"></i>"
   },
 
   {
@@ -99,7 +99,7 @@
     "Broker": "XP XPRESS LLC",
     "CS": "-",
     "DTP": "-",
-    "VehicleType": "icon"
+    "VehicleType": "<i id=\"vehicle_icon\" class=\"fa-solid fa-truck-moving\"></i>"
   },
   {
     "Age": "1",
@@ -109,7 +109,7 @@
     "Broker": "SNATCHMASTERS, LLC / LR LOGISTICS",
     "CS": "-",
     "DTP": "-",
-    "VehicleType": "icon"
+    "VehicleType": "<i id=\"vehicle_icon\" class=\"fa-solid fa-truck-moving\"></i>"
   },
   {
     "Age": "1",
@@ -119,6 +119,16 @@
     "Broker": "ALPHA CONNECT LLC",
     "CS": "-",
     "DTP": "-",
-    "VehicleType": "icon"
+    "VehicleType": "<i id=\"vehicle_icon\" class=\"fa-solid fa-truck\"></i>"
+  },
+  {
+    "Age": "1",
+    "PickupDate": "May 10",
+    "Origin": "Ozona, TX",
+    "Destination": "Bruni, TX",
+    "Broker": "ALPHA CONNECT LLC",
+    "CS": "-",
+    "DTP": "-",
+    "VehicleType": "<i id=\"vehicle_icon\" class=\"fa-solid fa-truck\"></i>"
   }
 ]

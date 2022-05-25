@@ -12,7 +12,7 @@ docReq.onload = function () {
       let insertTable = document.createElement("tr");
       insertTable.classList = "inserted-data-table";
       insertTable.innerHTML =
-        `<td>${tableData[i].Age}` +
+        `<td>${tableData[i].Age + "m"}` +
         `<td>${tableData[i].PickupDate}` +
         `<td>${tableData[i].Origin}` +
         `<td>${tableData[i].Destination}` +
