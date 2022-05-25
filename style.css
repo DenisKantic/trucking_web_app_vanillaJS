@@ -380,3 +380,23 @@ td {
 .td-details {
   height: 30px;
 }
+
+/* freight-info-right side */
+
+.freight-info {
+  width: 95%;
+  padding: 20px;
+}
+
+.comp-name {
+  margin-top: 20px;
+  font-size: 20px;
+}
+.review {
+  display: inline-flex;
+  margin-top: 15px;
+}
+
+.review-text {
+  margin-left: 10px;
+}
