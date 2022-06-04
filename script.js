@@ -1,11 +1,12 @@
 const tableData = document.getElementsByClassName('table-data');
 
+
 window.addEventListener('load', (e)=>{
   fetchAPI();
 })
 
-let fetchAPI = () =>{
-fetch("./data.json")
+let fetchAPI = () =>{ 
+fetch("./data.json" ) 
 .then(res => res.json())
 .then(data => createData(data));
 }

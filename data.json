@@ -6,8 +6,7 @@
     "Destination": "Saraland,AL",
     "Broker": "1A INTERMODAL",
     "CS": "-",
-    "DTP": "-",
-    "VehicleType": "<i id=\"vehicle_icon\" class=\"fa-solid fa-truck\"></i>"
+    "DTP": "-"
   },
 
   {
@@ -17,9 +16,8 @@
     "Destination": "Lewisville, TX",
     "Broker": "CITADEL CARTAGE LLC",
     "CS": "-",
-    "DTP": "-",
-    "VehicleType": "<i id=\"vehicle_icon\" class=\"fa-solid fa-truck\"></i>"
-  },
+    "DTP": "-"
+   },
   {
     "Age": "1",
     "PickupDate": "May 9",

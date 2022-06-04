@@ -490,7 +490,7 @@ td {
   border-top: dashed 1px #628bc9;
 }
 
-.mess_notes {
+.messages_and_notes {
   margin-top: 20px;
   font-size: 22px;
 }
@@ -521,7 +521,7 @@ td {
   width: 450px;
 }
 
-.order-num {
+.order-number {
   margin-top: 10px;
 }
 
