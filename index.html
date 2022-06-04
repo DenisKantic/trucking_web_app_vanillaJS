@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="script.js"></script>
+    <script src="states.js"></script>
+    <title>Freight app</title>
+  </head>
+  <body>
+    <header class="header-part">
+      <i class="fa-solid fa-truck-fast"></i>
+      <h3 class="active-load">Active loads: 13576</h3>
+      <div class="profile-section">
+        <p class="user-name">demo user</p>
+        <i class="fa-solid fa-user"></i>
+      </div>
+    </header>
+
+    <div class="main-part">
+      <div class="left-search-area">
+        
+
+        
+        <select name="or_states" class="origin-state">
+          <option value="texas" selected disabled hidden>Origin state</option>
+         
+          <!--
+          
+          <option >Alabama</option>
+          <option value="newyork">Arizora</option>
+          <option value="seattle">Arkansas</option>
+          <option value="seattle">California</option>
+          <option value="seattle">Colorado</option>
+          <option value="seattle">Connectitut</option>
+          <option value="seattle">Delaware</option>
+          <option value="seattle">Florida</option>
+          <option value="seattle">Georgia</option>
+          <option value="seattle">Hawaii</option>
+          <option value="seattle">Idaho</option>
+          <option value="seattle">Illinois</option>
+          <option value="seattle">Indiana</option>
+          <option value="seattle">Iowa</option>
+          <option value="seattle">Kansas</option>
+          <option value="seattle">Kentucky</option>
+          <option value="seattle">Louisiana</option>
+          <option value="seattle">Maine</option>
+          <option value="seattle">Maryland</option>
+          <option value="seattle">Massachutess</option>
+          <option value="seattle">Michigan</option>
+          <option value="seattle">Minnesota</option>
+          <option value="seattle">Missisipi</option>
+          <option value="seattle">Missouri</option>
+          <option value="seattle">Montana</option>
+          <option value="seattle">Nebraska</option>
+          <option value="seattle">Nevada</option>
+          <option value="seattle">New Hampshire</option>
+          <option value="seattle">New Jersey</option>
+          <option value="seattle">New Mexico</option>
+          <option value="seattle">New York</option>
+          <option value="seattle">North Carolina</option>
+          <option value="seattle">North Dakota</option>
+          <option value="seattle">Tennessee</option>
+          <option value="seattle">Texas</option>
+          <option value="seattle">Utah</option>
+          <option value="seattle">Vermont</option>
+          <option value="seattle">Virginia</option>
+          <option value="seattle">Washington</option>
+          <option value="seattle">West Virginia</option>
+          <option value="seattle">Wiscounsin</option>
+          <option value="seattle">Wyoming</option>
+          -->
+        </select>
+
+        <select name="states" class="select-state">
+          <option value="texas" selected disabled hidden>State</option>
+          <option >Alabama</option>
+          <option value="newyork">Arizora</option>
+          <option value="seattle">Arkansas</option>
+          <option value="seattle">California</option>
+          <option value="seattle">Colorado</option>
+          <option value="seattle">Connectitut</option>
+          <option value="seattle">Delaware</option>
+          <option value="seattle">Florida</option>
+          <option value="seattle">Georgia</option>
+          <option value="seattle">Hawaii</option>
+          <option value="seattle">Idaho</option>
+          <option value="seattle">Illinois</option>
+          <option value="seattle">Indiana</option>
+          <option value="seattle">Iowa</option>
+          <option value="seattle">Kansas</option>
+          <option value="seattle">Kentucky</option>
+          <option value="seattle">Louisiana</option>
+          <option value="seattle">Maine</option>
+          <option value="seattle">Maryland</option>
+          <option value="seattle">Massachutess</option>
+          <option value="seattle">Michigan</option>
+          <option value="seattle">Minnesota</option>
+          <option value="seattle">Missisipi</option>
+          <option value="seattle">Missouri</option>
+          <option value="seattle">Montana</option>
+          <option value="seattle">Nebraska</option>
+          <option value="seattle">Nevada</option>
+          <option value="seattle">New Hampshire</option>
+          <option value="seattle">New Jersey</option>
+          <option value="seattle">New Mexico</option>
+          <option value="seattle">New York</option>
+          <option value="seattle">North Carolina</option>
+          <option value="seattle">North Dakota</option>
+          <option value="seattle">Tennessee</option>
+          <option value="seattle">Texas</option>
+          <option value="seattle">Utah</option>
+          <option value="seattle">Vermont</option>
+          <option value="seattle">Virginia</option>
+          <option value="seattle">Washington</option>
+          <option value="seattle">West Virginia</option>
+          <option value="seattle">Wiscounsin</option>
+          <option value="seattle">Wyoming</option>
+        </select>
+
+        <button class="search-btn">Search</button>
+      </div>
+
+      <div class="free-paid-profile-option">
+        <button class="free-loads-btn">
+          <i class="fa fa-check"></i> FREE LOADS
+          <p class="num-jobs">4346</p>
+        </button>
+        <button class="expedite-pro-btn">
+          <i class="fa-solid fa-lock"></i>EXPEDITE PRO
+          <p class="num-jobs">4346</p>
+        </button>
+      </div>
+    </div>
+
+    <div class="left-side-table-data">
+      <table class="table-data" cellspacing="0">
+        <tr>
+          <th class="age">Age</th>
+          <th class="pickdate">Pickup Date</th>
+          <th class="origin">Origin</th>
+          <th class="destination">Destination</th>
+          <th class="broker">Broker</th>
+          <th class="cs">CS</th>
+          <th class="dtp">DTP</th>
+          <th class="vehicleType">Vehicle Type</th>
+        </tr>
+
+        <!---        <tr class="inserted-data-table"></tr> -->
+      </table>
+    </div>
+
+    <div class="right-side-card">
+      <header class="top-menu">
+        <button class="offer-btn">
+          <i class="fa-solid fa-envelope"></i>Send Offer
+        </button>
+        <button class="call-btn"><i class="fa-solid fa-phone"></i>CALL</button>
+      </header>
+
+      <div class="destination-part">
+        <i class="fa-solid fa-a">
+          <div class="information-part">
+            <p class="place">Hialeah, FL</p>
+            <p class="date">May 10</p>
+          </div>
+        </i>
+        <i class="fa-solid fa-arrow-right"></i>
+        <div class="freight-wrap-truck-text">
+          <i class="fa-solid fa-truck-moving"></i>
+          <p class="cargo-details">Small freight</p>
+        </div>
+        <i class="fa-solid fa-arrow-right"></i>
+        <i class="fa-solid fa-b">
+          <div class="information-part">
+            <p class="place" id="placeB">Saraland, AL</p>
+            <p class="date" id="dateB">May 10</p>
+          </div>
+        </i>
+      </div>
+
+      <!-- price - weight 3.075k length - distance -  -->
+
+      <table class="data-table-spec" cellspacing="0" cellspacing="0">
+        <tr class="th-details">
+          <th>Price</th>
+          <th>Weight</th>
+          <th>Lenght</th>
+          <th>Distance</th>
+        </tr>
+
+        <tr class="td-details">
+          <td>-</td>
+          <td>3.075k</td>
+          <td>-</td>
+          <td>-</td>
+        </tr>
+      </table>
+
+      <div class="freight-info">
+        <h1 class="comp-name">1A INTERMODAL</h1>
+
+        <!-- review-->
+        <div class="review">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <p class="review-text">(0 reviews)</p>
+        </div>
+
+        <div class="left-side-info">
+          <p class="phone">Phone</p>
+          <p>E-Mail: johndoe@example.com</p>
+          <br />
+          <p class="credit">
+            Credit score:<i class="fa-solid fa-circle-question"></i>
+          </p>
+          <p class="daysPay">
+            Days to pay:<i class="fa-solid fa-circle-question"></i>
+          </p>
+        </div>
+        <div class="right-side-info">
+          <p class="rate_broker"><i class="fa-solid fa-star"></i>Rate Broker</p>
+          <p class="hide_broker"><i class="fa-solid fa-ban"></i>Hide Broker</p>
+        </div>
+      </div>
+      <div class="messages-part">
+        <h1 class="messages_and_notes">Messages & Notes</h1>
+
+        <div class="left-note">
+          <p class="note">Note:</p>
+          <p class="dateNote">May9</p>
+        </div>
+
+        <div class="right-note">
+          <p class="bid">
+            BID.Redy Tues. Del Appt needed. 8 pallets of radiators to Ozark
+          </p>
+
+          <div class="order-number">Order number: 30283</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
