@@ -1,31 +1,31 @@
-let docReq = new XMLHttpRequest();
+const tableData = document.getElementsByClassName('table-data');
 
-docReq.open("GET", "data.json", true);
+window.addEventListener('load', (e)=>{
+  fetchAPI();
+})
 
-docReq.onload = function () {
-  if (docReq.status == 200) {
-    let tableAppendData = document.getElementsByClassName("table-data");
+let fetchAPI = () =>{
+fetch("./data.json")
+.then(res => res.json())
+.then(data => createData(data));
+}
 
-    let tableData = JSON.parse(docReq.responseText);
 
-    for (let i = 0; i < tableData.length; i++) {
-      let insertTable = document.createElement("tr");
-      insertTable.classList = "inserted-data-table";
-      insertTable.innerHTML =
-        `<td>${tableData[i].Age + "m"}` +
-        `<td>${tableData[i].PickupDate}` +
-        `<td>${tableData[i].Origin}` +
-        `<td>${tableData[i].Destination}` +
-        `<td>${tableData[i].Broker}` +
-        `<td>${tableData[i].CS}` +
-        `<td>${tableData[i].DTP}` +
-        `<td>${tableData[i].VehicleType}`;
-
-      tableAppendData[0].append(insertTable);
+    let createData = (data) =>{
+      for (let i = 0; i < data.length; i++) {
+        let insertTable = document.createElement("tr");
+        insertTable.classList = "inserted-data-table";
+        insertTable.innerHTML =
+          `<td>${data[i].Age + "m"}` +
+          `<td>${data[i].PickupDate}` +
+          `<td>${data[i].Origin}` +
+          `<td>${data[i].Destination}` +
+          `<td>${data[i].Broker}` +
+          `<td>${data[i].CS}` +
+          `<td>${data[i].DTP}` +
+          `<td>${data[i].VehicleType}`;
+  
+        tableData[0].append(insertTable);
     }
-  } else {
-    alert("document not inserted");
   }
-};
 
-docReq.send();
