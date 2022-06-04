@@ -16,14 +16,14 @@ fetch("./data.json")
         let insertTable = document.createElement("tr");
         insertTable.classList = "inserted-data-table";
         insertTable.innerHTML =
-          `<td>${data[i].Age + "m"}` +
-          `<td>${data[i].PickupDate}` +
-          `<td>${data[i].Origin}` +
-          `<td>${data[i].Destination}` +
-          `<td>${data[i].Broker}` +
-          `<td>${data[i].CS}` +
-          `<td>${data[i].DTP}` +
-          `<td>${data[i].VehicleType}`;
+          `<td>${data[i].Age + "m"}</td>` +
+          `<td>${data[i].PickupDate}</td>` +
+          `<td>${data[i].Origin}</td>` +
+          `<td>${data[i].Destination}</td>` +
+          `<td>${data[i].Broker}</td>` +
+          `<td>${data[i].CS}</td>` +
+          `<td>${data[i].DTP}</td>` +
+          `<td><i class="fa-solid fa-truck"></i></td>`;
   
         tableData[0].append(insertTable);
     }
